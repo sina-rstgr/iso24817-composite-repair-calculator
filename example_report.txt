@@ -1,0 +1,111 @@
+
+====================================================================
+COMPOSITE PIPE REPAIR CALCULATION REPORT
+ISO 24817:2017 - Defect Type A
+====================================================================
+
+1. DESIGN ROUTE
+------------------------------------------------
+Substrate strain route: load sharing with the substrate (Formulae 5, 6)
+MAWP (p_s): 2.03 MPa
+  source: calculated: 2 ts sigma_s / (D - ts)
+
+2. EQUIVALENT LOADS
+------------------------------------------------
+Equivalent pressure (p_eq): 5.0 MPa
+Equivalent axial load (F_eq): 648585.6 N
+Equivalent shear/torsion term (q): 0.0
+Pressure branch: upper branch (Formula 3)
+
+3. REPAIR THICKNESS (STRAIGHT PIPE)
+------------------------------------------------
+Hoop raw thickness: 14.5 mm
+Axial raw thickness: 4.6 mm
+Hoop required thickness: 14.5 mm
+Axial required thickness: 4.6 mm
+DESIGN THICKNESS (7.5.4 / 7.5.5): 14.5 mm
+
+Hoop thickness numerical solution (Formula 5):
+Iterations: 29
+Equation residual: -9.728e-13
+
+4. D/12 VALIDITY CHECK
+------------------------------------------------
+D/12 limit: 33.9 mm
+Design thickness: 14.5 mm
+Result: PASS
+
+5. ALLOWABLE LAMINATE STRAINS
+------------------------------------------------
+Design - installation temperature: 40.0 degC
+Design temperature Td: 60.0 degC
+Upper temperature limit Tm: 60.0 degC
+Temperature factor f_T1 (Table 7): 0.700
+Table 9 branch: Ea > 0.5 Ec
+epsilon_c0: 0.002766
+epsilon_a0: 0.002766
+Thermal correction circumferential: 0.000520
+Thermal correction axial: 0.000520
+Allowable circumferential strain: 0.001416
+Allowable axial strain: 0.001416
+
+6. PIPING COMPONENT THICKNESS FACTOR (FORMULA 32)
+------------------------------------------------
+Component: straight_pipe
+f_th,stress (Table 11): 1.00
+Straight pipe thickness: 14.5 mm
+Component thickness: 14.5 mm
+
+7. EXTERNAL PRESSURE AND SOIL LOADS (FORMULAE 30, 31)
+------------------------------------------------
+Not applicable
+
+8. FINAL DESIGN THICKNESS
+------------------------------------------------
+FINAL DESIGN THICKNESS: 14.5 mm
+Governing: Design loads (7.5.4 / 7.5.5)
+
+9. AXIAL REPAIR EXTENT
+------------------------------------------------
+Defect type: slot
+Defect axial length: 200.0 mm
+Overlap equation: slot: 2 sqrt(D t) (Formula 18)
+Calculated overlap: 143.7 mm
+Applied overlap per end: 143.7 mm
+Taper length per end: 72.6 mm
+
+REPAIR LENGTH BREAKDOWN
+------------------------------------------------
+Left overlap: 143.7 mm
+Defect length: 200.0 mm
+Right overlap: 143.7 mm
+Left taper: 72.6 mm
+Right taper: 72.6 mm
+------------------------------------------------
+TOTAL REPAIR LENGTH: 632.5 mm
+
+10. LAP-SHEAR OVERLAP CHECK (FORMULA 21)
+------------------------------------------------
+Lap shear strength (tau): 15.00 MPa
+Axial thickness (x f_th,stress): 4.6 mm
+Allowable axial strain: 0.001416
+Required overlap: 46.7 mm
+Available overlap: 143.7 mm
+Lap-shear overlap result (Formula 21): PASS
+
+11. LIVE-REPAIR INTERFACIAL STRESS (FORMULA 29)
+------------------------------------------------
+Not required: p_live = 0 (not a live repair)
+
+12. TEE PRESSURE LIMIT (FORMULA 33)
+------------------------------------------------
+Not required: component is not a tee
+
+13. RESIN THERMAL REQUIREMENT (ENGINEERING NOTE)
+------------------------------------------------
+Design temperature Td: 60.0 degC
+Table 5 (Type A): Tg >= 80.0 degC  or  HDT >= 75.0 degC
+Table 6 (Class 3, Tm = 60.0 degC): HDT >= 75.0 degC
+The resin used must have at least these values.
+
+====================================================================

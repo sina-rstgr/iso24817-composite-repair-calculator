@@ -1,0 +1,135 @@
+{
+  "inputs": {
+    "design_route": "substrate_strain",
+    "D": 406.4,
+    "t": 12.7,
+    "ts": 2.54,
+    "Es": 207000.0,
+    "allowable_stress": 161.66,
+    "Ec": 36000.0,
+    "Ea": 36000.0,
+    "nu": 0.27,
+    "tau": 15.0,
+    "p": 5.0,
+    "p_live": 0.0,
+    "ps": 2.0334591194968556,
+    "Fsh": 0.0,
+    "Mto": 0.0,
+    "Fax": 0.0,
+    "Max": 0.0,
+    "component": "straight_pipe",
+    "Db": null,
+    "defect_type": "slot",
+    "defect_diameter": null,
+    "defect_length": 200.0,
+    "axial_loads_present": true,
+    "repair_class": 3,
+    "lifetime": 10.0,
+    "T_design": 60.0,
+    "T_install": 20.0,
+    "T_m": 60.0,
+    "p_after": null,
+    "T_after": null,
+    "alpha_s": 1.2e-05,
+    "alpha_c": -1e-06,
+    "alpha_a": -1e-06,
+    "short_term_strain_failure": 0.02,
+    "p_e": null,
+    "burial_depth": null,
+    "gamma_soil": null
+  },
+  "mawp": {
+    "ps": 2.0334591194968556,
+    "source": "calculated: 2 ts sigma_s / (D - ts)"
+  },
+  "loads": {
+    "q": 0.0,
+    "p_eq": 5.0,
+    "F_eq": 648585.5732447971,
+    "transition_pressure": 0.0,
+    "branch": "upper branch (Formula 3)"
+  },
+  "thickness": {
+    "t_hoop_raw": 14.513312736749754,
+    "t_axial_raw": 4.583309698693344,
+    "t_hoop": 14.513312736749754,
+    "t_axial": 4.583309698693344,
+    "t_design": 14.513312736749754,
+    "formula_5_solution": {
+      "thickness": 14.513312736749754,
+      "iterations": 29,
+      "equation_residual": -9.727609343035404e-13
+    },
+    "route": "Substrate strain route: load sharing with the substrate (Formulae 5, 6)"
+  },
+  "thickness_check": {
+    "limit": 33.86666666666667,
+    "t_design": 14.513312736749754,
+    "passed": true
+  },
+  "allowable_strains": {
+    "f_T1": 0.7,
+    "delta_T": 40.0,
+    "epsilon_c0": 0.0027660710390639645,
+    "epsilon_a0": 0.0027660710390639645,
+    "thermal_correction_c": 0.0005200000000000001,
+    "thermal_correction_a": 0.0005200000000000001,
+    "epsilon_c": 0.001416249727344775,
+    "epsilon_a": 0.001416249727344775,
+    "table_branch": "Ea > 0.5 Ec"
+  },
+  "repair_extent": {
+    "defect_type": "slot",
+    "formula": "slot: 2 sqrt(D t) (Formula 18)",
+    "defect_axial_length": 200.0,
+    "lover_raw": 143.68409793710646,
+    "lover": 143.68409793710646,
+    "ltaper_each_end": 72.56656368374877,
+    "total_repair_length": 632.5013232417105
+  },
+  "formula_21": {
+    "t_axial_design": 4.583309698693344,
+    "required_overlap": 46.736000000000004,
+    "actual_overlap": 143.68409793710646,
+    "tau": 15.0,
+    "epsilon_a": 0.001416249727344775,
+    "passed": true
+  },
+  "interfacial_stress": {
+    "applicable": false,
+    "reason": "p_live = 0 (not a live repair)"
+  },
+  "component": {
+    "component": "straight_pipe",
+    "f_th_stress": 1.0,
+    "t_straight": 14.513312736749754,
+    "t_component": 14.513312736749754
+  },
+  "external_loads": {
+    "applicable": false,
+    "t_pe": null,
+    "t_soil": null,
+    "t_required": 0.0
+  },
+  "tee_pressure": {
+    "applicable": false,
+    "reason": "component is not a tee"
+  },
+  "resin_requirement": {
+    "T_design": 60.0,
+    "T_m": 60.0,
+    "table_5": {
+      "Tg": 80.0,
+      "HDT": 75.0
+    },
+    "repair_class": 3,
+    "table_6": [
+      "HDT",
+      75.0
+    ]
+  },
+  "final_design": {
+    "t_final": 14.513312736749754,
+    "governing": "Design loads (7.5.4 / 7.5.5)"
+  }
+}
